@@ -17,7 +17,7 @@ void User::addUser(){
     cin>>first_name;
     //cin>>middle_name;
     cin>>last_name;
-    fout<<first_name <<last_name<<endl;
+    fout<<user_id <<" "<<first_name <<"  "<<last_name<<endl;
     fout.close();
 }
 
@@ -30,8 +30,8 @@ void User::displayUser(){
         cout<<line<<endl;
     }
     fin.close();
-    cout<<"User Id = "<<user_id<<endl;
-    cout<<"User Name = "<<first_name<<" "<<last_name<<endl;
+    //cout<<"User Id = "<<user_id<<endl;
+    //cout<<"User Name = "<<first_name<<" "<<last_name<<endl;
 }
 
 int main(){
@@ -40,6 +40,6 @@ int main(){
     u[1].addUser();
     cout<<"User created"<<endl;
     u[0].displayUser();
-    u[1].displayUser();
+    //u[1].displayUser();
     return 0;
 }
